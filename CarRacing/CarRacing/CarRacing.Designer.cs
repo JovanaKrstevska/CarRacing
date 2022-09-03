@@ -1,7 +1,7 @@
 ﻿
 namespace CarRacing
 {
-    partial class Form1
+    partial class CarRacing
     {
         /// <summary>
         /// Required designer variable.
@@ -210,7 +210,7 @@ namespace CarRacing
             this.gameTimer.Interval = 10;
             this.gameTimer.Tick += new System.EventHandler(this.gameTimer_Tick);
             // 
-            // Form1
+            // CarRacing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -219,8 +219,8 @@ namespace CarRacing
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "CarRacing";
+            this.Text = "CarRacing";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Key_Up);
             this.panel1.ResumeLayout(false);

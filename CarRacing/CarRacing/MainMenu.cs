@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace CarRacing
 {
-    public partial class Form2 : Form
+    public partial class MainMenu : Form
     {
-        public Form2()
+        public MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            var CarRacing = new CarRacing();
+            CarRacing.Show();
         }
     }
 }

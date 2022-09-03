@@ -11,7 +11,7 @@ using System.Media;
 
 namespace CarRacing
 {
-    public partial class Form1 : Form
+    public partial class CarRacing : Form
     {
 
         int score;
@@ -24,7 +24,7 @@ namespace CarRacing
 
         bool goleft, goright;
 
-        public Form1()
+        public CarRacing()
         {
             InitializeComponent();
             ResetGame();

@@ -2,9 +2,10 @@ C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\bin\Debug\CarRacing.exe.
 C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\bin\Debug\CarRacing.exe
 C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\bin\Debug\CarRacing.pdb
 C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\obj\Debug\CarRacing.csprojAssemblyReference.cache
-C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\obj\Debug\CarRacing.Form1.resources
 C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\obj\Debug\CarRacing.Properties.Resources.resources
 C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\obj\Debug\CarRacing.csproj.GenerateResource.cache
 C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\obj\Debug\CarRacing.csproj.CoreCompileInputs.cache
 C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\obj\Debug\CarRacing.exe
 C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\obj\Debug\CarRacing.pdb
+C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\obj\Debug\CarRacing.CarRacing.resources
+C:\Users\Damjan\Documents\CarRacing\CarRacing\CarRacing\obj\Debug\CarRacing.MainMenu.resources

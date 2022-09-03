@@ -152,6 +152,26 @@ namespace CarRacing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap picture_background {
+            get {
+                object obj = ResourceManager.GetObject("picture_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Start_Button_Vector {
+            get {
+                object obj = ResourceManager.GetObject("Start_Button_Vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TruckBlue {
             get {
                 object obj = ResourceManager.GetObject("TruckBlue", resourceCulture);
