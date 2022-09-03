@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace CarRacing
 {
@@ -187,7 +188,13 @@ namespace CarRacing
         }
         private void gameOver()
         {
+            playSound();
+            gameTimer.Stop();
 
+            over.Visible = true;
+            over.BringToFront();
+
+            buttonStart.Enabled = true;
         }
         private void ResetGame()
         {
@@ -206,9 +213,16 @@ namespace CarRacing
 
             gameTimer.Start();
         }
+
+        private void restartGame(object sender, EventArgs e)
+        {
+            ResetGame();
+        }
+
         private void playSound()
         {
-
+            SoundPlayer playcrash = new SoundPlayer(Properties.Resources.hit);
+            playcrash.Play();
         }
     }
 }

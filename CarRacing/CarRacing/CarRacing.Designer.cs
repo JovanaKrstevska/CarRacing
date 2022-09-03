@@ -79,9 +79,9 @@ namespace CarRacing
             // over
             // 
             this.over.Image = global::CarRacing.Properties.Resources.gameover1;
-            this.over.Location = new System.Drawing.Point(138, 192);
+            this.over.Location = new System.Drawing.Point(112, 202);
             this.over.Name = "over";
-            this.over.Size = new System.Drawing.Size(195, 129);
+            this.over.Size = new System.Drawing.Size(249, 129);
             this.over.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.over.TabIndex = 2;
             this.over.TabStop = false;
@@ -181,6 +181,7 @@ namespace CarRacing
             this.buttonStart.TabIndex = 1;
             this.buttonStart.Text = "Start";
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.restartGame);
             // 
             // txtScore
             // 
