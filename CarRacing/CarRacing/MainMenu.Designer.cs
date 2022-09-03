@@ -30,6 +30,8 @@ namespace CarRacing
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.text = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -38,11 +40,35 @@ namespace CarRacing
             // 
             this.panel1.BackgroundImage = global::CarRacing.Properties.Resources.picture_background;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.text);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(-1, -2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(884, 458);
             this.panel1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = global::CarRacing.Properties.Resources.Controls;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(671, 318);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 128);
+            this.panel3.TabIndex = 2;
+            // 
+            // text
+            // 
+            this.text.BackColor = System.Drawing.Color.Transparent;
+            this.text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.29091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text.ForeColor = System.Drawing.SystemColors.Control;
+            this.text.Location = new System.Drawing.Point(702, 246);
+            this.text.Name = "text";
+            this.text.Size = new System.Drawing.Size(152, 69);
+            this.text.TabIndex = 1;
+            this.text.Text = "Controls:";
+            this.text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -72,5 +98,7 @@ namespace CarRacing
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label text;
+        private System.Windows.Forms.Panel panel3;
     }
 }

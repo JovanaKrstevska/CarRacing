@@ -71,6 +71,15 @@ namespace CarRacing.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream backgroundMusic {
+            get {
+                return ResourceManager.GetStream("backgroundMusic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap carGreen {
@@ -116,6 +125,16 @@ namespace CarRacing.Properties {
         internal static System.Drawing.Bitmap carYellow {
             get {
                 object obj = ResourceManager.GetObject("carYellow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Controls {
+            get {
+                object obj = ResourceManager.GetObject("Controls", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

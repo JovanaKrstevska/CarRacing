@@ -179,7 +179,7 @@ namespace CarRacing
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(140, 55);
             this.buttonStart.TabIndex = 1;
-            this.buttonStart.Text = "Start";
+            this.buttonStart.Text = "Play Again";
             this.buttonStart.UseVisualStyleBackColor = true;
             this.buttonStart.Click += new System.EventHandler(this.restartGame);
             // 
@@ -196,12 +196,12 @@ namespace CarRacing
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(167, 575);
+            this.label2.Location = new System.Drawing.Point(167, 586);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(318, 115);
+            this.label2.Size = new System.Drawing.Size(330, 115);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Доколку дојдете до \'Game Over\' \r\nпритиснете на копчето \'Start\'\r\nза да играте повт" +
-    "орно";
+            this.label2.Text = "Доколку дојдете до \'Game Over\' \r\nпритиснете на копчето \'Play Again\'\r\nза да играте" +
+    " повторно";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gameTimer

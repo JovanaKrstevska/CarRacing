@@ -128,5 +128,11 @@
   <ItemGroup>
     <None Include="Resources\Start-Button-Vector.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundMusic.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

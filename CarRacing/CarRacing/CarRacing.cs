@@ -69,20 +69,20 @@ namespace CarRacing
             if(score>300 && score<1500)
             {
                 over.Image = Properties.Resources.gameover1;
-                trafficSpeed = 12;
+                trafficSpeed = 11;
                 playerSpeed = 10;
             }
             if(score>1500 && score<2500)
             {
                 over.Image = Properties.Resources.gameover1;
-                trafficSpeed = 15;
-                playerSpeed = 13;
+                trafficSpeed = 13;
+                playerSpeed = 12;
             }
             if(score>2500)
             {
                 over.Image = Properties.Resources.gameover1;
-                trafficSpeed = 17;
-                playerSpeed = 15;
+                trafficSpeed = 15;
+                playerSpeed = 14;
             }
         }
 
@@ -198,6 +198,7 @@ namespace CarRacing
         }
         private void ResetGame()
         {
+            backgroundMusic();
             buttonStart.Enabled = false;
             over.Visible = false;
             goleft = false;
@@ -223,6 +224,12 @@ namespace CarRacing
         {
             SoundPlayer playcrash = new SoundPlayer(Properties.Resources.hit);
             playcrash.Play();
+        }
+
+        private void backgroundMusic()
+        {
+            SoundPlayer backgroundmusic = new SoundPlayer(Properties.Resources.backgroundMusic);
+            backgroundmusic.Play();
         }
     }
 }
