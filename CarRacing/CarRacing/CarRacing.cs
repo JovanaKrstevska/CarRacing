@@ -31,6 +31,10 @@ namespace CarRacing
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {
+
+            txtScore.Text = "Score:" + score;
+            score++;
+
             moveLine(5);
             if(goleft == true && PlayerCar.Left > 20)
             {
@@ -52,7 +56,33 @@ namespace CarRacing
             {
                 changeCars(GreenCar);
             }
+            if(PlayerCar.Bounds.IntersectsWith(PinkCar.Bounds) || PlayerCar.Bounds.IntersectsWith(GreenCar.Bounds))
+            {
+                gameOver();
+            }
 
+            if(score>40 && score<300)
+            {
+                over.Image = Properties.Resources.gameover1;
+            }
+            if(score>300 && score<1500)
+            {
+                over.Image = Properties.Resources.gameover1;
+                trafficSpeed = 12;
+                playerSpeed = 10;
+            }
+            if(score>1500 && score<2500)
+            {
+                over.Image = Properties.Resources.gameover1;
+                trafficSpeed = 15;
+                playerSpeed = 13;
+            }
+            if(score>2500)
+            {
+                over.Image = Properties.Resources.gameover1;
+                trafficSpeed = 17;
+                playerSpeed = 15;
+            }
         }
 
         private void Key_Down(object sender, KeyEventArgs e)
@@ -168,10 +198,10 @@ namespace CarRacing
             score = 0;
             over.Image = Properties.Resources.gameover1;
 
-            PinkCar.Top = carPosition.Next(200, 500) * -1;
+            PinkCar.Top = carPosition.Next(300, 650) * -1;
             PinkCar.Left = carPosition.Next(5, 200);
 
-            GreenCar.Top = carPosition.Next(200, 500) * -1;
+            GreenCar.Top = carPosition.Next(100, 550) * -1;
             GreenCar.Left = carPosition.Next(245, 422);
 
             gameTimer.Start();

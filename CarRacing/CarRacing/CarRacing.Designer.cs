@@ -42,7 +42,7 @@ namespace CarRacing
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonStart = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtScore = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
@@ -182,15 +182,15 @@ namespace CarRacing
             this.buttonStart.Text = "Start";
             this.buttonStart.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // txtScore
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.74545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 654);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 36);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Score: 0";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.74545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtScore.Location = new System.Drawing.Point(26, 654);
+            this.txtScore.Name = "txtScore";
+            this.txtScore.Size = new System.Drawing.Size(180, 36);
+            this.txtScore.TabIndex = 2;
+            this.txtScore.Text = "Score: 0";
+            this.txtScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
@@ -215,7 +215,7 @@ namespace CarRacing
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 736);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtScore);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
@@ -242,7 +242,7 @@ namespace CarRacing
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonStart;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtScore;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
