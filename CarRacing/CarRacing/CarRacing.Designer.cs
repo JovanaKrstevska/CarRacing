@@ -199,8 +199,8 @@ namespace CarRacing
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(318, 115);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Доколку дојдете до \'Game Over\' \r\nпритиснете на копчето \'Start\'\r\nза да играш повто" +
-    "рно";
+            this.label2.Text = "Доколку дојдете до \'Game Over\' \r\nпритиснете на копчето \'Start\'\r\nза да играте повт" +
+    "орно";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gameTimer

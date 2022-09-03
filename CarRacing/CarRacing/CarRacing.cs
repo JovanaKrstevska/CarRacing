@@ -16,6 +16,7 @@ namespace CarRacing
         int score;
         int carImage;
         int playerSpeed = 9;
+        int trafficSpeed = 5;
 
         Random rand = new Random();
         Random carPosition = new Random();
@@ -39,6 +40,19 @@ namespace CarRacing
             {
                 PlayerCar.Left += playerSpeed;
             }
+
+            PinkCar.Top += trafficSpeed;
+            GreenCar.Top += trafficSpeed;
+
+            if(PinkCar.Top>530)
+            {
+                changeCars(PinkCar);
+            }
+            if(GreenCar.Top>530)
+            {
+                changeCars(GreenCar);
+            }
+
         }
 
         private void Key_Down(object sender, KeyEventArgs e)
@@ -102,6 +116,43 @@ namespace CarRacing
         }
         private void changeCars(PictureBox tempCar)
         {
+            carImage = rand.Next(1, 7);
+
+            switch(carImage)
+            {
+                case 1:
+                    tempCar.Image = Properties.Resources.carYellow;
+                    break;
+                case 2:
+                    tempCar.Image = Properties.Resources.CarRed;
+                    break;
+                case 3:
+                    tempCar.Image = Properties.Resources.carGreen;
+                    break;
+                case 4:
+                    tempCar.Image = Properties.Resources.carPink;
+                    break;
+                case 5:
+                    tempCar.Image = Properties.Resources.ambulance;
+                    break;
+                case 6:
+                    tempCar.Image = Properties.Resources.TruckBlue;
+                    break;
+                case 7:
+                    tempCar.Image = Properties.Resources.TruckWhite;
+                    break;
+            }
+
+            tempCar.Top = carPosition.Next(100, 400) * -1;
+
+            if((string)tempCar.Tag == "carLeft")
+            {
+                tempCar.Left = carPosition.Next(5, 200);
+            }
+            if((string)tempCar.Tag == "carRight")
+            {
+                tempCar.Left = carPosition.Next(245, 422);
+            }
 
         }
         private void gameOver()
