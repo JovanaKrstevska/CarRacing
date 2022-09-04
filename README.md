@@ -144,7 +144,24 @@ private void changeCars(PictureBox tempCar)
 
         }
 ```
+Во овој дел се случува промена на возилата односно повикување на changeCars() функцијата и за левото возило и за десното возило. Тие се движаат исто како и возилото на играчот по Y оска и на крај кога ќе стигне до крајот на прозорецот автоматски се повикуваа таа функција и ги бира новите две возила. Последниот if кажува додека возилото на играчот и друго возило се судрат да се повика функцијата gameOver() односно ова се случува додека имаме колизија на две возила.
+```javascript
+            if(PinkCar.Top>530)
+            {
+                changeCars(PinkCar);
+            }
+            if(GreenCar.Top>530)
+            {
+                changeCars(GreenCar);
+            }
+            if(PlayerCar.Bounds.IntersectsWith(PinkCar.Bounds) || PlayerCar.Bounds.IntersectsWith(GreenCar.Bounds))
+            {
+                gameOver();
+            }
+
+```
 ### 4. Имплементација на Score односно поените на играчот
+Кодот што е прикажан подолу овозможува зголемување на брзината на возилата `(trafficSpeed)` вклучувајќи го и возилото на играчот `(playerSpeed)` да се зголемува во зависност од поените кои ги добива. На овој начин му станува доста потешко на играчот додека играта станува доста поинтересна.
 ```javascript
             if(score>40 && score<300)
             {
@@ -170,3 +187,51 @@ private void changeCars(PictureBox tempCar)
             }
 ```
 ### 5. gameOver(), ResetGame(), playSound(), backgroundMusic() функции
+#### gameOver() функција
+```javascript
+   private void gameOver()
+        {
+            playSound();
+            gameTimer.Stop();
+
+            over.Visible = true;
+            over.BringToFront();
+
+            buttonStart.Enabled = true;
+        }
+```
+#### ResetGame() функција
+```javascript
+   private void ResetGame()
+        {
+            backgroundMusic();
+            buttonStart.Enabled = false;
+            over.Visible = false;
+            goleft = false;
+            goright = false;
+            score = 0;
+            over.Image = Properties.Resources.gameover1;
+
+            PinkCar.Top = carPosition.Next(300, 650) * -1;
+            PinkCar.Left = carPosition.Next(5, 200);
+
+            GreenCar.Top = carPosition.Next(100, 550) * -1;
+            GreenCar.Left = carPosition.Next(245, 422);
+
+            gameTimer.Start();
+        }
+```
+#### playSound() и backgroundMusic() фунцкии
+```javascript
+   private void playSound()
+     {
+          SoundPlayer playcrash = new SoundPlayer(Properties.Resources.hit);
+          playcrash.Play();
+     }
+
+   private void backgroundMusic()
+     {
+          SoundPlayer backgroundmusic = new SoundPlayer(Properties.Resources.backgroundMusic);
+          backgroundmusic.Play();
+     }
+```
